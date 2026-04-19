@@ -5,39 +5,39 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Ajudar o cliente a organizar suas finanças e orientar como criar uma reserva de emergência.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Como base nas transações do cliente, vai sugerir formas de economizar para criar a reserva de emergência.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Clientes que tem uma renda menor que 5.000,00 e sem nenhum tipo de reserva ou investimento.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Liberdade
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+Direto, Educativo, Amigo
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Informal, deve cativar o cliente com tom bem humorado.
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: Olá, amigo! Hoje é um belo dia para criar uma reserva de emergência!
+- Confirmação: Entendi, já volto com a resposta, aguenta aí
+- Erro/Limitação: Não tenho essa informação, ainda estou aprendendo.
 
 ---
 
@@ -47,7 +47,7 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Usuário] -->|Mensagem| B[Interface]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -59,9 +59,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
+| Interface | [Streamlit] |
+| LLM | [Olama - Local] |
+| Base de Conhecimento | [JSON/CSV com dados do cliente] |
 | Validação | [ex: Checagem de alucinações] |
 
 ---
